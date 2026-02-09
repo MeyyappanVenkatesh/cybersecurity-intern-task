@@ -85,8 +85,8 @@ In March 2022, HubSpot disclosed a breach where attackers abused API authorizati
 | Root cause: Incomplete authorization checks in API surface | Root cause: `company_id` validation missing in edge-case endpoints (search, exports) |
 
 ### Source
-- HubSpot Security Advisory: https://www.hubspot.com/security-update-march-2022  
-- Krebs on Security Analysis: https://krebsonsecurity.com/2022/03/hubspot-breach-exposed-customer-data/  
+- HubSpot Security Advisory: https://ir.hubspot.com/news-releases/news-release-details/hubspots-statement-regarding-march-18-2022-security-incident 
+- Krebs on Security Analysis: https://thehackernews.com/2022/04/into-breach-breaking-down-3-saas-app.html  
 
 ### Why This Matters
 HubSpot is a mature, security-conscious SaaS company (NASDAQ: HUBS). If they suffered authorization flaws in 2022, an 18-month-old startup like ClientHub is *significantly* more likely to have identical gaps — especially in rapidly added features (calendar sync, exports) where security reviews were skipped.
@@ -251,3 +251,4 @@ jobs:
 | IDOR Scanner          | Pre-production  | Regressions in new code      | No      | ✅ Yes (blocks deployment) |
 
 No single control is perfect. Together, they create overlapping protection that survives partial implementation failures — critical for real-world environments where "perfect security" is unattainable.
+
